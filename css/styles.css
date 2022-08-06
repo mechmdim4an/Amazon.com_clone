@@ -1,0 +1,906 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #0F1111;
+    background: #fff;
+}
+
+.navBar_container {
+    width: 100%;
+    height: 60px;
+    background-color: #0f1818;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navBar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* -------leftside Nav bar CSS---*/
+.nav span,
+i {
+    color: #fff;
+}
+
+.amazon_logo {
+    width: 90px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    padding: 5px 6px 0 6px;
+    cursor: pointer;
+}
+
+.amazon_logo_img {
+    position: relative;
+}
+
+.amazon_in {
+    position: absolute;
+    font-family: inherit;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px 0 0 -20px;
+    text-align: center;
+}
+
+.amazon_in a {
+    color: #fff;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.location i {
+    margin-top: 17px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.deliver_location {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.deliver_to {
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.deliver_to_location {
+    font-weight: 900;
+    font-size: 16px
+}
+
+
+
+/* -------input and search Nav bar CSS---*/
+
+.input {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex: 0.9;
+    justify-content: space-between;
+    margin: 0 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.input_search {
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 2px;
+}
+
+.i_search {
+    font-size: 20px;
+    padding: 12px 15px;
+    color: #232f3e;
+    background-color: #dea208;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.input div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid #bcdabe;
+    background-color: #CEE5D0;
+    padding: 7px 0;
+}
+
+.input div span,
+i {
+    color: #3e454d;
+    border-radius: 6px 0 0 6px;
+    padding: 6px 6px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+/* -------rightside Nav bar CSS---*/
+.nav_right {
+    justify-content: space-between;
+    flex-wrap: warp;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.nav_india_flag {
+    width: 30px;
+    height: 22px;
+}
+
+.nav_right i {
+    margin: 0;
+    padding: 0;
+    color: #d1d5db;
+    margin-left: 5px;
+}
+
+.flagDropDown {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.nav_signIn {
+    flex: 0.55;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 6px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.nav_signIn a {
+    color: #fff;
+}
+
+.nav_Lists {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 0;
+    flex: 0.25;
+}
+
+.fa-shopping-cart {
+    font-size: 28px;
+    color: white;
+}
+
+.cart_text {
+    position: relative;
+    align-items: flex-end;
+    padding: 5px 5px;
+}
+
+.cart p {
+    position: absolute;
+    font-weight: 900;
+    color: #dea208;
+    margin-top: -25px;
+    margin-left: 17px;
+
+}
+
+/* Hover*/
+.amazon_logo:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.location:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.input div:hover {
+    background-color: #ebeff2;
+}
+
+.input i:hover {
+    background-color: #f5d072;
+}
+
+.input div:hover {
+    border: 5px solid #f5d072;
+}
+
+.cart:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.sign:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.flagDropDown:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.nav #return:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* menu bar */
+.menu_bar {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    background-color: #232f3e;
+    color: #fff;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu_bar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu_bar span {
+    font-size: 18px;
+
+}
+
+.menu_bar li {
+    margin: 7px 0;
+    padding: 5px 6px;
+    cursor: pointer;
+
+}
+
+.menu_bar i {
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* right side menu bar */
+
+.menu_bar_section2 img {
+    margin: 7px 6px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.site_bar {
+    flex: 0.08;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.site_bar div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu_bar_section1 {
+    flex: 0.80;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu_bar_section2 {
+    flex: 0.4;
+    display: flex;
+    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+/* hover for Menu bar */
+
+.site_bar div:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.menu_bar_section1 ul li:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.menu_bar_section2:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+
+/* Hero Section */
+
+.white_space {
+    width: 100%;
+    height: 690px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #eef1f1;
+}
+
+.slide img {
+    width: 1348px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 560px;
+}
+
+.imageBox {
+    display: flex;
+    position: absolute;
+    animation: carousel 30s alternate infinite;
+}
+
+/* Auto Slide images */
+
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    14% {
+        left: -1348px;
+    }
+
+    19% {
+        left: -1348px;
+    }
+
+    24% {
+        left: calc(-1348px*2);
+    }
+
+    29% {
+        left: calc(-1348px*2);
+    }
+
+    34% {
+        left: calc(-1348px*3);
+    }
+
+    39% {
+        left: calc(-1348px*3);
+    }
+
+    44% {
+        left: calc(-1348px*4);
+    }
+
+    49% {
+        left: calc(-1348px*4);
+    }
+
+    54% {
+        left: calc(-1348px*5);
+    }
+
+    59% {
+        left: calc(-1348px*5);
+    }
+
+    64% {
+        left: calc(-1348px*6);
+    }
+
+    69% {
+        left: calc(-1348px*6);
+    }
+
+    74% {
+        left: calc(-1348px*7);
+    }
+
+    100% {
+        left: calc(-1348px*7);
+    }
+}
+
+
+/* layers and colors 0n hero section images*/
+.cardContainer {
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, transparent, #eef1f1 30%);
+}
+
+.productCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 20px 0;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.productCard .box {
+    width: 303px;
+    height: 430px;
+    background-color: #fff;
+}
+
+.cardImage {
+    overflow: hidden;
+    background-color: white;
+}
+
+.box h3 {
+    margin: 15px;
+    font-size: 22px;
+}
+
+.box a {
+    display: block;
+    text-decoration: none;
+    margin: 2px 20px;
+    font-size: 16px;
+    font-weight: 250;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.box div img {
+    width: 270px;
+    height: 290px;
+    cursor: pointer;
+    margin: 0 10px 0 15px;
+
+}
+
+.cardImage {
+    display: inline-block;
+}
+
+.productCard .box1 {
+    width: 303px;
+    height: 430px;
+    background-color: transparent;
+}
+
+/* side box*/
+.box1 div {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    margin: 0 10px 20px 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.box1 div h3 {
+    padding-top: 20px;
+    margin: 5px 20px;
+}
+
+.box1 div button {
+    font-size: 14px;
+    width: 80%;
+    padding: 5px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f6bf34;
+}
+
+.box1 div button:hover {
+    background-color: #f4dea6;
+}
+
+.box1 .cardImage1 {
+    width: 100%;
+    height: 255px;
+    background: transparent;
+}
+
+.box1 .cardImage1 div {
+    width: 100%;
+    height: 255px;
+    background: transparent;
+}
+
+.box1 .cardImage1 div img {
+    width: 100%;
+    height: 230px;
+}
+.box1 a{
+    color: black;
+}
+.box1 .cardImage1 div {
+    font-size: 16px;
+    text-align: right;
+}
+
+
+/* Four Image Cards */
+
+.cardContainer1 {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eef1f1;
+}
+
+.productCard1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px 0;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.box11 {
+    background-color: #fff;
+}
+
+.productCard1 .box11 {
+    width: 303px;
+    height: 430px;
+    background-color: #fff;
+}
+
+.box11 .cardImage1 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: white;
+}
+
+.box11 h3 {
+    margin: 15px;
+    font-size: 22px;
+}
+
+.box11 a {
+    display: block;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 12px;
+    font-weight: 250;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.box11 div img {
+    width: 125px;
+    height: 100px;
+    cursor: pointer;
+    justify-items: center;
+    margin: 0 10px 0 15px;
+
+}
+
+.cardImage1 {
+    display: inline-block;
+}
+
+/* full width slider box model*/
+.cardSlider {
+    background-color: #eef1f1;
+    width: 100%;
+    height: 350px;
+    padding: 0 25px 25px 25px;
+}
+
+.sliderSection h3 {
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.sliderSection h3 a {
+    font-size: 14px;
+}
+
+.sliderSection {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    padding: 20px 20px 10px 20px;
+    overflow-x: hidden;
+    background-color: white;
+}
+.sliderSection li img{
+    height: 80%;
+}
+
+.productToSilde {
+    display: flex;
+    margin-top: 5px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.productToSilde::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+    cursor: pointer;
+}
+
+.productToSilde::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productToSilde li {
+    list-style: none;
+    margin: 0 0 10px 15px;
+    cursor: pointer;
+}
+
+.left-btn,
+.right-btn {
+    width: 50px;
+    height: 90px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    top: 32%;
+    position: absolute;
+    border: 4px solid transparent;
+}
+
+.left-btn {
+    border-radius: 0 5px 5px 0;
+    left: 20px;
+}
+
+.right-btn {
+    border-radius: 5px 0 0 5px;
+    right: 20px;
+}
+
+.left-btn:hover {
+    border: 2px solid rgb(2, 150, 150);
+}
+
+.right-btn:hover {
+    border: 2px solid rgb(2, 150, 150);
+}
+
+.left-btn i,
+.right-btn i {
+    color: rgb(54, 54, 54);
+    position: absolute;
+    font-size: 30px;
+    top: 30%;
+    left: 13%;
+    right: 13%;
+}
+
+/* Big card */
+
+.bigCard {
+    background-color: #eef1f1;
+    width: 100%;
+    height: 415px;
+    padding: 0 25px 25px 25px;
+}
+
+.bigCard div {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+}
+
+.bigCard div img {
+    width: 90%;
+    height: 90%;
+    margin: 20px 50px 20px 70px;
+    cursor: pointer;
+}
+
+/* footer Sign In */
+
+.signInTab {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+
+.signInTab div {
+    text-align: center;
+    padding: 20px;
+    margin: 50px 0;
+    border-radius: 10px;
+    border: 1px solid #bcdabe;
+}
+
+.signInTab a {
+    text-decoration: none;
+    color: #0F1111;
+}
+
+
+.signInTab div button {
+    font-size: 12px;
+    width: 20%;
+    padding: 5px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+    background-color: #f6bf34;
+}
+
+.signInTab div button:hover {
+    background-color: #f4dea6;
+}
+
+.goTotop {
+    width: 100%;
+    height: 50px;
+    background-color: #6f747b;
+    text-align: center;
+    padding: 15px;
+    /* background-color: #0F1111; */
+}
+
+.goTotop a {
+    color: #fff;
+    text-align: center;
+}
+
+.goTotop:hover {
+    background-color: #3e4855;
+}
+
+.footerNavContainer {
+    width: 100%;
+    height: 310px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav {
+    width: 80%;
+    height: 230px;
+    margin: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNavLinks h3,
+ul {
+    color: rgb(217, 210, 210);
+    margin: 15px;
+}
+
+.footerNavLinks ul li {
+    margin: 5px 0 5px 0;
+}
+
+.footerNavLinks ul li a{
+    color: rgb(217, 210, 210);
+}
+
+.footerNavContainer hr{
+    border: 0.5px solid #bcdabe;
+}
+
+.footerNavContainer1 {
+    width: 100%;
+    height: 150px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.countries{
+    width: 80%;
+    height: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.countries img{
+    width: 100px;
+    height:40px;
+    margin-right: 50px;
+}
+
+.footerNavContainer1 div {
+    width: 80%;
+    text-align: center;
+} 
+.footerNavContainer1 div a{
+    padding-left: 10px;
+    color: #fff;
+} 
+
+.copyright{
+    width: 100%;
+    height: 100px;
+    background-color: #111922;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright a, span{
+    padding-right: 20px;
+    color: #fff;
+}
+
